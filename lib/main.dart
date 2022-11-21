@@ -36,7 +36,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   String? data;
-
+   //load data from txt file
   Future<void> loadData(int index) async {
     final _loadedData = await rootBundle.loadString(contentPathList[index]);
     data = _loadedData;
